@@ -1,0 +1,16 @@
+{
+  "name": "trip-planner",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.0",
+    "typescript": "5.7.2"
+  }
+}
