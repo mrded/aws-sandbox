@@ -7,3 +7,5 @@ services:
     ports:
       - "4566:4566"  # LocalStack Gateway
       - "3000:3000"  # external services port range
+    environment:
+      - SERVICES=lambda,apigateway

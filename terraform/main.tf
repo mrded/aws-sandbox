@@ -47,7 +47,6 @@ resource "aws_lambda_function" "foo_lambda" {
   handler          = "index.handler"
   filename         = "${path.module}/../lambdas/foo-lambda.zip"
   source_code_hash = filebase64sha256("${path.module}/../lambdas/foo-lambda.zip")
-
 }
 
 resource "aws_api_gateway_rest_api" "foo_api" {
