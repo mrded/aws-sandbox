@@ -1,0 +1,11 @@
+{
+  "name": "lambda-function",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
+}

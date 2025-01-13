@@ -1,6 +1,7 @@
 .env
-/app/node_modules
-/app/dist
 /terraform/.terraform
 /terraform/terraform.tfstate*
 /volume
+/lambdas/*.zip
+/lambdas/*/node_modules
+/lambdas/*/dist

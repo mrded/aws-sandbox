@@ -18,12 +18,8 @@ Confirm LocalStack is running:
 curl http://localhost:4566/health
 ```
 
-Make sure the `/app` Docker image is already built and available. Ensure this image is pushed to a Docker registry accessible from the EC2 instance or preloaded into the LocalStack Docker environment.
-
-Apply the Terraform configuration from `/terraform`
-
-Confirm the EC2 instance is running with:
-
+to test:
 ```sh
-aws --endpoint-url=http://localhost:4566 ec2 describe-instances
+# eg: api_endpoint = "arn:aws:execute-api:us-east-1::d4ibxvgqds/default/foo"
+curl http://localhost:4566/restapis/d4ibxvgqds/default/_user_request_/foo
 ```
